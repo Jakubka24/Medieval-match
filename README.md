@@ -13,7 +13,7 @@ Everyone knows how it's working. It's simply "memory" game.
 Your task is to match cards with the same pictures. 
 
 ## Demo movie 
-[https://watch.screencastify.com/v/Hrb3FMx2Gpn3GKwk0ace](https://vimeo.com/manage/videos/835230577/privacy)
+https://vimeo.com/835230577?share=copy
 
 ## Get started 
 1. Download files manualy or via "git clone <link>".
