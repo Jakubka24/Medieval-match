@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react"
+import "./App.css"
+import Timer from "./components/Timer";
+import Main from "./components/Main";
+import {fadeIn} from "./variants";
+import {motion} from "framer-motion";
 
-function App() {
+const App = () => {
+
+    const [toggle,setToggle] = useState(false);
+    const [stop,setStop] = useState(false);
+
+    const start = () => {
+        setToggle(!toggle)
+    }
+
+    const pause = () => {
+        setStop(!stop)
+    }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          {toggle ? <Timer stop = {stop}/> : ''}
+          <Main start = {start} pause = {pause}/>
+      </div>
   );
 }
 

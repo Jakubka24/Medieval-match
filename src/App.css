@@ -1,38 +1,1263 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+body {
+  background: linear-gradient(to bottom, #000000, #0c0c3f);
+  width: 100vw;
+  height: 100vh;
+
 }
 
-.App-logo {
-  height: 40vmin;
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6,125px);
+  grid-template-rows: 200px;
+  grid-gap: 10px;
+  justify-content: center;
+  margin-top: 20vh;
+}
+
+
+.button-27 {
+  position: absolute;
+  left: 47.5%;
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #f1d679;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 6vw;
+  height: 6vh;
+  will-change: transform;
+
+}
+
+
+.button-27:disabled {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  color: PaleGoldenRod;
+  border: 2px solid white;
+  transition: ease-in 1s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+h1 {
+  top: 35%;
+  text-transform: uppercase;
+  font-family: 'MedievalSharp', cursive;
+
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+  text-align: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(6,100px);
+  grid-gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 25vh;
+
 }
 
-.App-link {
-  color: #61dafb;
+.card-grid-opacity {
+  display: grid;
+  grid-template-columns: repeat(6,100px);
+  grid-gap: 10px;
+  justify-content: center;
+  padding-top: 25vh;
+  transition: ease 1.5s;
+  opacity: 0.2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h2 {
+  position: absolute;
+  left: 46%;
+  top: 9%;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  transition: 700ms ease;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+
+}
+
+.startView {
+  padding-top: 50vh;
+}
+
+h3 {
+  position: absolute;
+  left: 39%;
+  top: 2%;
+  font-size: 38px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  transition: 100ms ease;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+}
+
+.gratulations {
+  transition: ease-in 5s;
+  transition-delay: 3s;
+}
+
+h4 {
+  position: absolute;
+  left: 46%;
+  top: 14%;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  transition: 100ms ease;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+}
+
+h5 {
+  position: absolute;
+  left: 46%;
+  top: 15%;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  transition: 500ms ease;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+}
+
+h6 {
+  position: absolute;
+  left: 34.5%;
+  top: 45%;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: 0px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: PaleGoldenRod;
+  outline: none;
+  text-align: center;
+}
+
+/* MAX WIDTH 395 */
+
+@media (max-width: 395px) {
+  body {
+    width: 100vw;
+    height: 150vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3,75px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin-top: 20vh;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3,75px);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 15px;
+    justify-content: center;
+    padding-top: 25vh;
+
+  }
+
+  .card-grid-opacity {
+    display: grid;
+    grid-template-columns: repeat(3,75px);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 15px;
+    justify-content: center;
+    padding-top: 25vh;
+    transition: ease 1.5s;
+    opacity: 0.2;
+  }
+
+  h1 {
+    position: absolute;
+    left: 4%;
+    top: 30%;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 0px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
+  }
+
+  h2 {
+    position: absolute;
+    left: 37%;
+    top: 9%;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 700ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+
+  }
+
+  .startView {
+    padding-top: 50vh;
+  }
+
+  h3 {
+    position: absolute;
+    left: 17%;
+    top: 2%;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 100ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  .gratulations {
+    transition: ease-in 5s;
+    transition-delay: 3s;
+  }
+
+  h4 {
+    position: absolute;
+    left: 20%;
+    top: 14%;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 100ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  h5 {
+    position: absolute;
+    left:37.5%;
+    top: 15%;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 500ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  h6 {
+    position: absolute;
+    left: 4%;
+    top: 2%;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 0px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
+  }
+
+  .button-27 {
+    position: absolute;
+    left: 40%;
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #f1d679;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 20vw;
+    height: 5vh;
+    will-change: transform;
+
+  }
+}
+
+
+/*MIN WIDTH 396 AND MAX WIDTH 599 */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    width: 100vw;
+    height: 150vh;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3,75px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin-top: 20vh;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3,75px);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 15px;
+    justify-content: center;
+    padding-top: 25vh;
+
+  }
+
+  .card-grid-opacity {
+    display: grid;
+    grid-template-columns: repeat(3,75px);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 15px;
+    justify-content: center;
+    padding-top: 25vh;
+    transition: ease 1.5s;
+    opacity: 0.2;
+  }
+
+  h1 {
+    position: absolute;
+    left: 4%;
+    top: 30%;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 0px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
+  }
+
+  h2 {
+    position: absolute;
+    left: 37%;
+    top: 9%;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 700ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+
+  }
+
+  .startView {
+    padding-top: 50vh;
+  }
+
+  h3 {
+    position: absolute;
+    left: 17%;
+    top: 2%;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 100ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  .gratulations {
+    transition: ease-in 5s;
+    transition-delay: 3s;
+  }
+
+  h4 {
+    position: absolute;
+    left: 20%;
+    top: 14%;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 100ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  h5 {
+    position: absolute;
+    left:36%;
+    top: 15%;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 500ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  .button-27 {
+    position: absolute;
+    left: 40%;
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #f1d679;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 20vw;
+    height: 5vh;
+    will-change: transform;
+
+  }
+
+  h6 {
+    position: absolute;
+    left: 4%;
+    top: 30%;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 0px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
+  }
+}
+
+/* MIN WIDTH 481 and MAX WIDTH 767 */
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    width: 100vw;
+    height: 110vh;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6,55px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 23vh;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(6,55px);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    padding-top: 28vh;
+
+  }
+
+  .card-grid-opacity {
+    display: grid;
+    grid-template-columns: repeat(6,55px);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    padding-top: 28vh;
+    transition: ease 1.5s;
+    opacity: 0.2;
+  }
+
+  h1 {
+    position: absolute;
+    left: 26%;
+    top: 30%;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 0px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
+  }
+
+  h2 {
+    position: absolute;
+    left: 44.5%;
+    top: 13%;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 700ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+
+  }
+
+  .startView {
+    padding-top: 50vh;
+  }
+
+  h3 {
+    position: absolute;
+    left: 32%;
+    top: 2%;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 100ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  .gratulations {
+    transition: ease-in 5s;
+    transition-delay: 3s;
+  }
+
+  h4 {
+    position: absolute;
+    left: 20%;
+    top: 14%;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 100ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  h5 {
+    position: absolute;
+    left:45%;
+    top: 20%;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 500ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  .button-27 {
+    position: absolute;
+    left: 45%;
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #f1d679;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 13vw;
+    height: 9vh;
+    will-change: transform;
+
+  }
+
+  h6 {
+    position: absolute;
+    left: 4%;
+    top: 30%;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 0px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
+  }
+}
+
+/* MIN WIDTH 768 and MAX WIDTH 900 */
+@media (min-width: 768px) and (max-width: 900px) {
+  body {
+    width: 100vw;
+    height: 150vh;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(9,60px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 35vh;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(9,60px);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    padding-top: 35vh;
+
+  }
+
+  .card-grid-opacity {
+    display: grid;
+    grid-template-columns: repeat(9,60px);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 10px;
+    justify-content: center;
+    padding-top: 35vh;
+    transition: ease 1.5s;
+    opacity: 0.2;
+  }
+
+  h1 {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 0px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
+  }
+
+  h2 {
+    position: absolute;
+    left: 45%;
+    top: 12%;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 700ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+
+  }
+
+  .startView {
+    padding-top: 50vh;
+  }
+
+  h3 {
+    position: absolute;
+    left: 35%;
+    top: 2%;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 100ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  .gratulations {
+    transition: ease-in 5s;
+    transition-delay: 3s;
+  }
+
+  h4 {
+    position: absolute;
+    left: 20%;
+    top: 14%;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 100ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  h5 {
+    position: absolute;
+    left:46%;
+    top: 22%;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 500ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  .button-27 {
+    position: absolute;
+    left: 45%;
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #f1d679;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 10vw;
+    height: 8vh;
+    will-change: transform;
+
+  }
+
+  h6 {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 0px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
+  }
+}
+/*MIN WIDTH 901 - MAX WIDTH 1024 */
+@media (min-width:901px) and (max-width: 1023px) {
+  body {
+    width: 100vw;
+    height: 125vh;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(9,75px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin-top: 35vh;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(9,75px);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 15px;
+    justify-content: center;
+    padding-top: 35vh;
+
+  }
+
+  .card-grid-opacity {
+    display: grid;
+    grid-template-columns: repeat(9,75px);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 15px;
+    justify-content: center;
+    padding-top: 35vh;
+    transition: ease 1.5s;
+    opacity: 0.2;
+  }
+
+  h1 {
+    position: absolute;
+    left: 25%;
+    top: 33%;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 0px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
+  }
+
+  h2 {
+    position: absolute;
+    left: 45%;
+    top: 12%;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 700ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+
+  }
+
+  .startView {
+    padding-top: 50vh;
+
+  }
+
+  h3 {
+    position: absolute;
+    left: 32%;
+    top: 2%;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 100ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  .gratulations {
+    transition: ease-in 5s;
+    transition-delay: 3s;
+  }
+
+  h4 {
+    position: absolute;
+    left: 30%;
+    top: 14%;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 100ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  h5 {
+    position: absolute;
+    left:46%;
+    top: 20%;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 500ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  .button-27 {
+    position: absolute;
+    left: 45%;
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #f1d679;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 14vw;
+    height: 10vh;
+    will-change: transform;
+
+  }
+
+  h6 {
+    position: absolute;
+    left: 23%;
+    top: 33%;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 0px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
+  }
+}
+
+/* MIN WIDTH 1025 and MAX WIDTH 1199 */
+@media (min-width:1024px) and (max-width: 1199px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6,100px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin-top: 20vh;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(6,100px);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 15px;
+    justify-content: center;
+    padding-top: 25vh;
+
+  }
+
+  .card-grid-opacity {
+    display: grid;
+    grid-template-columns: repeat(6,100px);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 15px;
+    justify-content: center;
+    padding-top: 25vh;
+    transition: ease 1.5s;
+    opacity: 0.2;
+  }
+
+  h1 {
+    position: absolute;
+    left:24%;
+    top:33%;
+    font-size: 56px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 0px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
+  }
+
+  h2 {
+    position: absolute;
+    left: 45%;
+    top: 11%;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 700ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+
+  }
+
+  .startView {
+    padding-top: 50vh;
+  }
+
+  h3 {
+    position: absolute;
+    left: 35%;
+    top: 2%;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 100ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  .gratulations {
+    transition: ease-in 5s;
+    transition-delay: 3s;
+  }
+
+  h4 {
+    position: absolute;
+    left: 30%;
+    top: 14%;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 100ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  h5 {
+    position: absolute;
+    left:45%;
+    top: 17%;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 500ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  .button-27 {
+    position: absolute;
+    left: 45%;
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #f1d679;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 12vw;
+    height: 8vh;
+    will-change: transform;
+
+  }
+
+  h6 {
+    position: absolute;
+    left: 23%;
+    top: 33%;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 0px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
+  }
+}
+
+/* MIN WIDTH 1181 and MAX WIDTH 1919 */
+@media (min-width:1201px) and (max-width: 1919px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6,110px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin-top: 20vh;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(6,110px);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 15px;
+    justify-content: center;
+    padding-top: 25vh;
+
+  }
+
+  .card-grid-opacity {
+    display: grid;
+    grid-template-columns: repeat(6,110px);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 15px;
+    justify-content: center;
+    padding-top: 25vh;
+    transition: ease 1.5s;
+    opacity: 0.2;
+  }
+
+  h1 {
+    position: absolute;
+    left:35%;
+    top: 33%;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 0px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
+  }
+
+  h2 {
+    position: absolute;
+    left: 47%;
+    top: 11%;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 700ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+
+  }
+
+  .startView {
+    padding-top: 50vh;
+  }
+
+  h3 {
+    position: absolute;
+    left: 38%;
+    top: 2%;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 100ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  .gratulations {
+    transition: ease-in 5s;
+    transition-delay: 3s;
+  }
+
+  h4 {
+    position: absolute;
+    left: 30%;
+    top: 14%;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 100ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  h5 {
+    position: absolute;
+    left:47%;
+    top: 17%;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    transition: 500ms ease;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+  }
+
+  .button-27 {
+    position: absolute;
+    left: 45%;
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #f1d679;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 10vw;
+    height: 6vh;
+    will-change: transform;
+
+  }
+
+  h6 {
+    position: absolute;
+    left: 37%;
+    top: 33%;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: 0px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: PaleGoldenRod;
+    outline: none;
+    text-align: center;
   }
 }
