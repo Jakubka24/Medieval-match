@@ -13,7 +13,8 @@ Everyone knows how it's working. It's simply "memory" game.
 Your task is to match cards with the same pictures. 
 
 ## Demo movie 
-https://vimeo.com/835230577?share=copy
+[MedievalMatch.webm](https://github.com/Jakubka24/Medieval-match/assets/123602747/18679710-9af6-4650-a4d2-a114cf63c17b)
+
 
 ## Get started 
 1. Download files manualy or via "git clone <link>".
